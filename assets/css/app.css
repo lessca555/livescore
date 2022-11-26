@@ -41,6 +41,8 @@ body{
 .container-home .one .tengah .score .tim-kiri{
     width: 45%;
     padding-left: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .container-home .one .tengah .score .tim-kiri h1{
@@ -57,9 +59,10 @@ body{
 
 .container-home .one .tengah .score .tim-kanan{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     width: 45%;
     padding-right: 10px;
+    padding-left: 50px;
 }
 
 .container-home .one .kanan{
@@ -74,7 +77,21 @@ body{
     font-size: 80px;
 }
 
-.container-home .one button{
+.container-home .one .btn-play{
+    border-radius: 55%;
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.container-home .one .btn-back{
+    border-radius: 55%;
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.container-home .one .btn-warning{
     border-radius: 55%;
     font-size: 50px;
     width: 100px;
@@ -123,7 +140,33 @@ body{
     background-color: #fff;
 }
 
+.container-home .two .tengah .lapangan .player1-a h4{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    color: #fff;
+}
 
+.container-home .two .tengah .lapangan .player1-b h4{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: #fff;
+}
+
+.container-home .two .tengah .lapangan .player2-a h4{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    color: #fff;
+}
+
+.container-home .two .tengah .lapangan .player2-b h4{
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    color: #fff;
+}
 
 .container-home .two .kanan{
     width: 20%;
