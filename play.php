@@ -121,16 +121,17 @@
                                 <div class="pelanggaran-pemain">
                                     <div class="row col-md-12">
                                         <div class="col-md-3">
-                                            <img src="assets/img/redcard.jpg" alt="" style="width: 100px; height: 100px;">
+                                            <div class="card" style="background-color: #ff1100; height: 100px;"></div>
                                             <p>Kartu Merah</p>
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="assets/img/yellowcard.jpg" alt="" style="width: 100px; height: 100px;">
+                                            <div class="card" style="background-color: #ffc000; height: 100px;"></div>
                                             <p>Kartu kuning</p>
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="assets/img/redcard.jpg" alt="" style="width: 100%; height: 100px;">
-                                            <p>Kartu Merah</p>
+                                            <center>
+                                                <h1 style="font-size: 100px; color: #2986cc;">R</h1>
+                                            </center>
                                         </div>
                                         <div class="col-md-3">
                                             <img src="assets/img/redcard.jpg" alt="" style="width: 100%;">
