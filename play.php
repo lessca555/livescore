@@ -115,59 +115,136 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Pelanggaran</h1>
                             </div>
+
                             <div class="modal-body">
                                 <div class="pelanggaran-pemain">
-                                    <div class="row col-md-12">
+                                    <div class="row col-md-12 ctr-warn">
                                         <div class="col-md-3">
-                                            <div class="card" style="background-color: #ff1100; height: 100px;"></div>
-                                            <p>Kartu Merah</p>
+                                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modal_pelanggaran1">
+                                                <center>
+                                                    <div class="card" style="background-color: #ffd24b; height: 80px; width: 60px;"></div>
+                                                    <p>Warning</p>
+                                                </center>
+                                            </button>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modal_pelanggaran1">
+                                                <center>
+                                                    <div class="card" style="background-color: #ff1100; height: 80px; width: 60px;"></div>
+                                                    <p>Fault</p>
+                                                </center>
+                                            </button>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modal_pelanggaran1">
+                                                <center>
+                                                    <h1 style="font-size: 60px; color: #4b9dda">R</h1>
+                                                    <p>Referee Called</p>
+                                                </center>
+                                            </button>
                                         </div>
                                         <div class="col-md-3">
-                                            <div class="card" style="background-color: #ffc000; height: 100px;"></div>
-                                            <p>Kartu kuning</p>
+                                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modal_pelanggaran1">
+                                                <center>
+                                                    <h1 style="font-size: 60px; color: #4b9dda">S</h1>
+                                                    <p>Suspension</p>
+                                                </center>
+                                            </button>
                                         </div>
                                         <div class="col-md-3">
-                                            <center>
-                                                <h1 style="font-size: 100px; color: #2986cc;">R</h1>
-                                            </center>
+                                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modal_pelanggaran1">
+                                                <center>
+                                                    <h1 style="font-size: 60px; color: #4b9dda">O</h1>
+                                                    <p>Overrule</p>
+                                                </center>
+
+                                            </button>
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="assets/img/redcard.jpg" alt="" style="width: 100%;">
-                                            <p>Kartu Merah</p>
+                                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modal_pelanggaran1">
+                                                <center>
+                                                    <h1 style="font-size: 60px; color: #4b9dda">I</h1>
+                                                    <p>Injury</p>
+                                                </center>
+
+                                            </button>
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="assets/img/redcard.jpg" alt="" style="width: 100%;">
-                                            <p>Kartu Merah</p>
+                                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modal_pelanggaran1">
+                                                <center>
+                                                    <div class="card" style="background-color: #000; height: 80px; width: 60px;"></div>
+                                                    <p>Disqualified</p>
+                                                </center>
+                                            </button>
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="assets/img/redcard.jpg" alt="" style="width: 100%;">
-                                            <p>Kartu Merah</p>
+                                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modal_pelanggaran1">
+                                                <center>
+                                                    <h1 style="font-size: 60px; color: #4b9dda">RET</h1>
+                                                    <p>Retired</p>
+                                                </center>
+                                            </button>
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="assets/img/redcard.jpg" alt="" style="width: 100%;">
-                                            <p>Kartu Merah</p>
+                                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modal_pelanggaran1">
+                                                <center>
+                                                    <h1 style="font-size: 60px; color: #4b9dda">C</h1>
+                                                    <p>Serice Court Error</p>
+                                                </center>
+                                            </button>
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="assets/img/redcard.jpg" alt="" style="width: 100%;">
-                                            <p>Kartu Merah</p>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <img src="assets/img/redcard.jpg" alt="" style="width: 100%;">
-                                            <p>Kartu Merah</p>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <img src="assets/img/redcard.jpg" alt="" style="width: 100%;">
-                                            <p>Kartu Merah</p>
+                                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modal_pelanggaran1">
+                                                <center>
+                                                    <h1 style="font-size: 60px; color: #4b9dda">PMD</h1>
+                                                    <p>Promoted</p>
+                                                </center>
+                                            </button>
                                         </div>
                                         
                                     </div>
                                 </div>
                             </div>
+
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal pelanggaran 1 -->
+                <div class="modal fade" id="modal_pelanggaran1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Pilih Pemain</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="btn btn-dark w-100 tim-1" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#penerima">
+                                    <h1>Samsudin(MU)</h1>
+                                </button>
+                                
+                                <button class="btn btn-dark w-100 mt-2 tim-1" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#penerima">
+                                    <h1>Joko(MU)</h1>
+                                </button>
+
+                                <button class="btn btn-dark w-100 mt-2 tim-2" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#penerima">
+                                    <h1>Sugiri(SF)</h1>
+                                </button>
+
+                                <button class="btn btn-dark w-100 mt-2 tim-2" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#penerima">
+                                    <h1>Widodo(SF)</h1>
+                                </button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#pelanggaran">Back</button>
                             </div>
                         </div>
                     </div>
