@@ -15,7 +15,7 @@
         <div class="container-home">
             <div class="one mb-2">
                 <div class="kiri">
-                    <button class="btn btn-light btn-back"><i class="fa-solid fa-circle-arrow-left"></i></button>
+                    <button class="btn btn-light btn-back"><i class="fa-solid fa-reply"></i></button>
                 </div>
 
                 <div class="tengah">
@@ -77,19 +77,19 @@
                                 <h1 class="modal-title fs-5" id="exampleModalLabel">Pilih Server</h1>
                             </div>
                             <div class="modal-body">
-                                <button class="btn btn-dark w-100" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#penerima">
+                                <button class="btn btn-dark w-100 tim-1" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#penerima">
                                     <h1>Samsudin(MU)</h1>
                                 </button>
                                 
-                                <button class="btn btn-dark w-100 mt-2" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#penerima">
+                                <button class="btn btn-dark w-100 mt-2 tim-1" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#penerima">
                                     <h1>Joko(MU)</h1>
                                 </button>
 
-                                <button class="btn btn-dark w-100 mt-2" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#penerima">
+                                <button class="btn btn-dark w-100 mt-2 tim-2" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#penerima">
                                     <h1>Sugiri(SF)</h1>
                                 </button>
 
-                                <button class="btn btn-dark w-100 mt-2" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#penerima">
+                                <button class="btn btn-dark w-100 mt-2 tim-2" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#penerima">
                                     <h1>Widodo(SF)</h1>
                                 </button>
                             </div>
@@ -108,13 +108,26 @@
                                 <h1 class="modal-title fs-5" id="exampleModalLabel">Pilih Receiver</h1>
                             </div>
                             <div class="modal-body">
-                                <a href="play.php" class="btn btn-dark w-100">
-                                    <h1>Sugiri(SF)</h1>
-                                </a>
+                                <div id="tim-a">
+                                    <a href="play.php" class="btn btn-dark w-100">
+                                        <h1>Samsudin(MU)</h1>
+                                    </a>
+    
+                                    <a href="play.php" class="btn btn-dark w-100 mt-3">
+                                        <h1>Joko(MU)</h1>
+                                    </a>
+                                </div>
 
-                                <a href="play.php" class="btn btn-dark w-100 mt-3">
-                                    <h1>Widodo(SF)</h1>
-                                </a>
+                                <div id="tim-b">
+                                    <a href="play.php" class="btn btn-dark w-100 mt-3">
+                                        <h1>Sugiri(SF)</h1>
+                                    </a>
+    
+                                    <a href="play.php" class="btn btn-dark w-100 mt-3">
+                                        <h1>Widodo(SF)</h1>
+                                    </a>
+                                </div>
+
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal1">Back</button>
@@ -140,12 +153,15 @@
                         <div class="player1-a">
                             <h4>Samsudin</h4>
                         </div>
+
                         <div class="player1-b">
                             <h4>Joko</h4>
                         </div>
+
                         <div class="player2-a">
                             <h4>Sugiri</h4>
                         </div>
+
                         <div class="player2-b">
                             <h4>Widodo</h4>
                         </div>
