@@ -1,0 +1,5 @@
+1. Ganti background putih, lapangan hijau.
+2. Button kanan next round.
+3. Atas bagi 3 kolom.
+4. Skor dihapus.
+5. icon cock di setiap pemain yang melakukan serve.

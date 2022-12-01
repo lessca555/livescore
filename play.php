@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="tengah">
-                    <button class="btn btn-light btn-play" id="play"><i class="fa-solid fa-circle-play"></i></button>
+                    <button class="btn btn-dark btn-play" id="play" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-circle-play"></i></button>
                     <div class="score">
 
                         <div class="atas">
@@ -42,13 +42,13 @@
 
                         <div class="bawah">
                             <div class="tim-a">
-                                <input class="form-control" type="number" name="" id="player_kiri" disabled>
+                                <input class="form-control" type="number" name="" id="player_kiri" min="1" value="0" disabled>
                             </div>
 
                             <i class="fa-solid fa-minus pt-4"></i>
 
                             <div class="tim-b">
-                                <input class="form-control" style="text-align: right;" type="number" name="" id="player_kanan" disabled>
+                                <input class="form-control" style="text-align: right;" type="number" name="" id="player_kanan" min="1" value="0" disabled>
                             </div>
                             
                         </div>
@@ -250,6 +250,103 @@
                     </div>
                 </div>
 
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Pilih tim pada posisi kanan</h1>
+                            </div>
+                            
+                            <div class="modal-body">
+                                <button class="btn btn-dark w-100" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#modal1">
+                                    <h1>Samsudin(MU)</h1>
+                                    <h1>Joko(MU)</h1>
+                                </button>
+
+                                <button class="btn btn-dark mt-3 w-100" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#modal1">
+                                    <h1>Sugiri(SF)</h1>
+                                    <h1>Widodo(SF)</h1>
+                                </button>
+
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Server-->
+                <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Pilih Server</h1>
+                            </div>
+
+                            <div class="modal-body">
+                                <button class="btn btn-dark w-100 tim-1 tim_a1" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#penerima">
+                                    <h1>Samsudin(MU)</h1>
+                                </button>
+                                
+                                <button class="btn btn-dark w-100 mt-2 tim-1 tim_a2" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#penerima">
+                                    <h1>Joko(MU)</h1>
+                                </button>
+
+                                <button class="btn btn-dark w-100 mt-2 tim-2 tim_b1" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#penerima">
+                                    <h1>Sugiri(SF)</h1>
+                                </button>
+
+                                <button class="btn btn-dark w-100 mt-2 tim-2 tim_b2" style="text-align: left;" data-bs-toggle="modal" data-bs-target="#penerima">
+                                    <h1>Widodo(SF)</h1>
+                                </button>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Receiver -->
+                <div class="modal fade" id="penerima" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Pilih Receiver</h1>
+                            </div>
+                            <div class="modal-body">
+                                <div id="tim-a">
+                                    <button class="btn btn-dark w-100 play" data-bs-dismiss="modal">
+                                        <h1>Samsudin(MU)</h1>
+                                    </button>
+    
+                                    <button class="btn btn-dark w-100 mt-3 play" data-bs-dismiss="modal">
+                                        <h1>Joko(MU)</h1>
+                                    </button>
+                                </div>
+
+                                <div id="tim-b">
+                                    <button class="btn btn-dark w-100 mt-3 play" data-bs-dismiss="modal">
+                                        <h1>Sugiri(SF)</h1>
+                                    </button>
+    
+                                    <button class="btn btn-dark w-100 mt-3 play" data-bs-dismiss="modal">
+                                        <h1>Widodo(SF)</h1>
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal1">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div class="two">
@@ -259,113 +356,63 @@
                     </div>
 
                     <div class="bawah">
-                        <button class="btn btn-light" id="score_kiri"><h1>SCORE</h1></button>
+                        <button class="btn btn-light score_plus" id="score_kiri"><h1>SCORE</h1></button>
                     </div>
                 </div>
                 
                 <div class="tengah">
                     <div class="lapangan">
-                        <img src="assets/img/lapangan.jpg" alt="">
+                        <img src="assets/img/lapangan1.jpg" alt="">
 
-                        <div class="player1-a">
-                            <h4>Samsudin</h4>
+                        <div class="player1">
+                            <div class="player1-a">
+                                <div class="pemain p1a">
+                                    <h4>Samsudin</h4>
+                                </div>
+    
+                                <div class="cock 1a">
+    
+                                </div>
+                            </div>
+    
+                            <div class="player1-b">
+                                <div class="pemain p1b">
+                                    <h4>Joko</h4>
+                                </div>
+    
+                                <div class="cock 1b">
+    
+                                </div>
+                            </div>
+
                         </div>
 
-                        <div class="player1-b">
-                            <h4>Joko</h4>
-                        </div>
+                        <div class="player2">
+                            <div class="player2-a">
+                                
+                                <div class="cock 2a">
+                                    
+                                </div>
+    
+                                <div class="pemain p2a">
+                                    <h4>Sugiri</h4>
+                                </div>
+                            </div>
+    
+                            <div class="player2-b">
+                                <div class="cock 2b">
+    
+                                </div>
+    
+                                <div class="pemain p2b">
+                                    <h4>Widodo</h4>
+                                </div>
+    
+                            </div>
 
-                        <div class="player2-a">
-                            <h4>Sugiri</h4>
-                        </div>
-
-                        <div class="player2-b">
-                            <h4>Widodo</h4>
                         </div>
                     </div>
 
-                    <div class="skor">
-                        <table class="table table-bordered border-dark">
-                            <thead>
-                                <tr>
-                                    <td>Samsudin</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-
-                                <tr>
-                                    <td>Joko</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-
-                                <tr>
-                                    <td>Sugiri</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-
-                                <tr>
-                                    <td>Widodo</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-
-                            </thead>
-                        </table>
-                    </div>
                 </div>
 
                 <div class="kanan">
@@ -373,7 +420,7 @@
                         <button class="btn btn-light"><i class="fa-solid fa-plus"></i> <img src="assets/img/cock.png" alt=""></button>
                     </div>
                     <div class="bawah">
-                        <button class="btn btn-light" id="score_kanan"><h1>SCORE</h1></button>
+                        <button class="btn btn-light score_plus" id="score_kanan"><h1>SCORE</h1></button>
                     </div>
                 </div>
 
