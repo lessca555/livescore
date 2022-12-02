@@ -4,9 +4,8 @@ $('.play').click(function() {
     $( "#play" ).hide();
     $( ".score" ).show();
     // console.log('baaa');
-    let i=1;
     let x=1;
-
+    let i=1;
 
     $('#score_kiri').click(function() {
         $('#player_kiri').val(i++);
@@ -15,6 +14,7 @@ $('.play').click(function() {
         $('.p1b').appendTo('.player1-a');
         $('.1b').appendTo('.player1-a');
     });
+    
 
     $('#score_kanan').click(function() {
         $('#player_kanan').val(x++);
@@ -22,6 +22,16 @@ $('.play').click(function() {
         $('.2a').appendTo('.player2-b');
         $('.p2b').appendTo('.player2-a');
         $('.2b').appendTo('.player2-a');
+    });
+
+    let cocks=1;
+
+    $('#minus_cock').click(function(){
+        $('#jumlah_cock').val(cocks--);
+    });
+
+    $('#plus_cock').click(function(){
+        $('#jumlah_cock').val(cocks++);
     });
 });
 

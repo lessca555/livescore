@@ -15,8 +15,10 @@
         <div class="container-home">
             <div class="one mb-2">
                 <div class="kiri-1">
-                    <button class="btn btn-warning btn-tantangan-kiri" data-bs-toggle="modal" data-bs-target="#tantangan_kiri">2</button>
-                    <h5>Tantangan tersisa</h5>
+                    <div class="add_cock">
+                        <img src="assets/img/cock.png" alt="">
+                        <input type="number" class="form-control" name="" id="jumlah_cock" min=0 value="0" disabled>    
+                    </div>
                 </div>
                 
                 <div class="kiri-2">
@@ -33,6 +35,13 @@
                                     <h1>1 - 1</h1>
                                 </center>
                             </div>
+
+                            <div class="tengah">
+                                <center>
+                                    <h1>1 - 1</h1>
+                                </center>
+                            </div>
+                            
                             <div class="kanan">
                                 <center>
                                     <h1>1 - 1</h1>
@@ -62,7 +71,7 @@
 
                 <div class="kanan-2">
                     <button class="btn btn-warning btn-tantangan-kanan" data-bs-toggle="modal" data-bs-target="#tantangan_kanan">2</button>
-                    <h5>Tantangan tersisa</h5>
+                    <h5>Next Round</h5>
                 </div>
 
                 <!-- modals -->
@@ -352,7 +361,7 @@
             <div class="two">
                 <div class="kiri">
                     <div class="atas">
-                        <button class="btn btn-light"><i class="fa-solid fa-minus"></i> <img src="assets/img/cock.png" alt=""></button>
+                        <button class="btn btn-light" id="minus_cock"><i class="fa-solid fa-minus"></i> <img src="assets/img/cock.png" alt=""></button>
                     </div>
 
                     <div class="bawah">
@@ -417,7 +426,7 @@
 
                 <div class="kanan">
                     <div class="atas">
-                        <button class="btn btn-light"><i class="fa-solid fa-plus"></i> <img src="assets/img/cock.png" alt=""></button>
+                        <button class="btn btn-light" id="plus_cock"><i class="fa-solid fa-plus"></i> <img src="assets/img/cock.png" alt=""></button>
                     </div>
                     <div class="bawah">
                         <button class="btn btn-light score_plus" id="score_kanan"><h1>SCORE</h1></button>
