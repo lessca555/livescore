@@ -10,46 +10,41 @@ $('.play').click(function() {
     // console.log('baaa');
     let x=1;
     let i=1;
+    let current = -1;
+
+    function swapContent(a, b){
+        tmp = $(a).html()
+        $(a).html($(b).html())
+        $(b).html(tmp)
+    }  
 
     $('#score_kiri').click(function() {
         $('#player_kiri').val(i++);
-        // $('.p1a').appendTo('.player1-b');
-        // $('.1a').appendTo('.player1-b');
-        // $('.p1b').appendTo('.player1-a');
-        // $('.1b').appendTo('.player1-a');
-
-        let tmp = $('.player1-a').html();
-        $('.player1-a').html($('.player1-b').html());
-        $('.player1-b').html(tmp);
-
-        let smp = $('.1b').html()
-        $('.1b').html($('.2b').html())
-        $('.2b').html(smp)
-
-        let amp = $('.1a').html()
-        $('.1a').html($('.2a').html())
-        $('.2a').html(amp)
+        swapContent('.player1-a', '.player1-b');
+        
+        // console.log($('.1b').html(), $('.1a').html());
+        if (current != 1){
+            current = 1;
+            swapContent('.1b', '.2b');
+            swapContent('.1a', '.2a');
+        }else{
+            
+        }
     });
+    
     
 
     $('#score_kanan').click(function() {
         $('#player_kanan').val(x++);
-        // $('.p2a').appendTo('.player2-b');
-        // $('.2a').appendTo('.player2-b');
-        // $('.p2b').appendTo('.player2-a');
-        // $('.2b').appendTo('.player2-a');
+        swapContent('.player2-a', '.player2-b');
 
-        let tmp = $('.player2-a').html();
-        $('.player2-a').html($('.player2-b').html());
-        $('.player2-b').html(tmp);
-
-        let smp = $('.1b').html()
-        $('.1b').html($('.2b').html())
-        $('.2b').html(smp)
-
-        let amp = $('.1a').html()
-        $('.1a').html($('.2a').html())
-        $('.2a').html(amp)
+        if (current != 2){
+            current = 2;
+            swapContent('.1a', '.2a');
+            swapContent('.1b', '.2b');
+        }else{
+            
+        }
     });
 
     let cocks=1;
