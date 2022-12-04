@@ -8,36 +8,67 @@ let b1 = $('.2a');
 let b2 = $('.2b');
 
 //players
-// let p1a = $('h4').html("Samsudin");
-// let p1b = $('h4').html("Joko");
-// let p2a = $('h4').html("Sugiri");
-// let p2b = $('h4').html("Widodo");
+$('.p1a').html("<h4>Samsudin</h4>");
+$('.p1b').html("<h4>Joko</h4>");
+$('.p2a').html("<h4>Sugiri</h4>");
+$('.p2b').html("<h4>Widodo</h4>");
 
 let x=1;
 let i=1;
 let current = -1;
+let ball = "<img src='assets/img/cock.png' alt=''>";
+
+$('#slc_team1').click(function(){
+    //swap pemain kiri ke kanan
+    $('.p1a').appendTo('.player2-a')
+    $(a1).appendTo('.player2-a')
+    $('.p1b').appendTo('.player2-b')
+    $(a2).appendTo('.player2-b')
+    
+    //swap pemain kanan ke kiri
+    $('.p2a').appendTo('.player1-a')
+    $(b1).appendTo('.player1-a')
+    $('.p2b').appendTo('.player1-b')
+    $(b2).appendTo('.player1-b')
+    
+    //swap score board
+    $('#player_kiri').appendTo('.tim-b')
+    $('#player_kanan').appendTo('.tim-a')
+
+    //swap button score
+    $('#score_kiri').appendTo('.sc_kanan')
+    $('#score_kanan').appendTo('.sc_kiri')
+});
+
+$('#slc_team1').click(function(){
+    current = 2;
+})
 
 $('.tim_a1').click(function(){
     $(a1).prepend(ball);
     current = 1;
+    // console.log(current);
 });
 
 $('.tim_a2').click(function(){
     $(a2).prepend(ball);
     current = 1;
+    // console.log(current);
 });
 
 $('.tim_b1').click(function(){
     $(b1).prepend(ball);
     current = 2;
+    // console.log(current);
 });
 
 $('.tim_b2').click(function(){
     $(b2).prepend(ball);
     current = 2;
+    // console.log(current);
 });
 
-let ball = "<img src='assets/img/cock.png' alt=''>";
+
 $('.score').hide();
 
 $('.play').click(function() {
@@ -82,8 +113,7 @@ $('.play').click(function() {
         console.log(current);
     });
 
-
-    let cocks=1;
+    let cocks = 1;
 
     $('#minus_cock').click(function(){
         $('#jumlah_cock').val(cocks--);

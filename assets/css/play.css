@@ -209,10 +209,20 @@ body{
     height: 100%;
 }
 
+.container-home .two .tengah .lapangan .kiri{
+    position: absolute;
+    top: 45%;
+    left: 27%;
+    color: #fff;
+    width: 300px;
+    height: 200px;
+    display: flex;
+}
+
 .container-home .two .tengah .lapangan .player1-a{
     position: absolute;
-    top: 40%;
-    left: 30%;
+    top: 20%;
+    left: 10%;
     color: #fff;
     width: 250px;
     height: 50px;
@@ -234,7 +244,7 @@ body{
 .container-home .two .tengah .lapangan .player1-b{
     position: absolute;
     top: 70%;
-    left: 30%;
+    left: 10%;
     color: #fff;
     width: 250px;
     height: 50px;
@@ -253,10 +263,20 @@ body{
     width: 80px;
 }
 
+.container-home .two .tengah .lapangan .kanan{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    color: #fff;
+    width: 300px;
+    height: 200px;
+    display: flex;
+}
+
 .container-home .two .tengah .lapangan .player2-a{
     position: absolute;
-    top: 40%;
-    left: 55%;
+    top: 20%;
+    left: 10%;
     color: #fff;
     width: 250px;
     height: 50px;
@@ -278,7 +298,7 @@ body{
 .container-home .two .tengah .lapangan .player2-b{
     position: absolute;
     top: 70%;
-    left: 55%;
+    left: 10%;
     color: #fff;
     width: 250px;
     height: 50px;
